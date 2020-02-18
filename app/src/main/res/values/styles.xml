@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorFirst</item>
+    </style>
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorPrimaryDark</item>
+        <item name="hintTextColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="BtnJawaban" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/colorThird</item>
+        <item name="android:textColor">@color/colorFirstDark</item>
+        <item name="rippleColor">@color/colorAccent</item>
+        <item name="android:backgroundSplit">@color/colorFirstDark</item>
+    </style>
+    <style name="BtnJawaban2" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:backgroundTint">@color/colorThird</item>
+        <item name="android:textColor">@color/colorFirstDark</item>
+        <item name="rippleColor">@color/colorFirstDark</item>
+        <item name="android:textColorHighlight">@color/colorThird</item>
+    </style>
+
+    <style name="Invers" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/colorFirstDark</item>
+        <item name="android:backgroundTint">@android:color/white</item>
+        <item name="rippleColor">@color/colorAccent</item>
+    </style>
+</resources>

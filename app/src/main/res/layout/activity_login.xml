@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ImgLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toTopOf="@+id/guideline23"
+        app:layout_constraintEnd_toStartOf="@+id/GlRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/GlLeft"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TilLoginEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FFFFFF"
+        android:hint="email"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorFirstDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TilLoginPassword"
+        app:layout_constraintEnd_toStartOf="@+id/GlRight"
+        app:layout_constraintStart_toStartOf="@+id/GlLeft"
+        app:layout_constraintTop_toTopOf="@+id/guideline23">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EdtEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorFirstDark"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TilLoginPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="password"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorFirstDark"
+        android:textStyle="bold"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toStartOf="@+id/GlRight"
+        app:layout_constraintStart_toStartOf="@+id/GlLeft"
+        app:layout_constraintTop_toBottomOf="@+id/TilLoginEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EdtPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:inputType="textPassword"
+            android:textColor="@color/colorFirstDark"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/TvAlertLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/GlRight"
+        app:layout_constraintStart_toStartOf="@+id/GlLeft"
+        app:layout_constraintTop_toBottomOf="@+id/TilLoginPassword" />
+
+    <TextView
+        android:id="@+id/TvForgetPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="lupa password?"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorFirstDark"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/BtnKeMasuk"
+        app:layout_constraintEnd_toStartOf="@+id/GlRight"
+        app:layout_constraintStart_toStartOf="@+id/GlLeft" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/BtnKeMasuk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorFirstDark"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="Masuk"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/BtnKeDaftar"
+        app:layout_constraintEnd_toStartOf="@+id/GlRight"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/GlLeft" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/BtnKeDaftar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="Daftar"
+        android:textColor="@color/colorFirstDark"
+        android:theme="@style/Invers"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/GlRight"
+        app:layout_constraintStart_toStartOf="@+id/GlLeft" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GlLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/GlRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9432624" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35978112" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

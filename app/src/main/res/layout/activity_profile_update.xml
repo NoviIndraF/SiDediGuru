@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFirst"
+    tools:context=".ProfileUpdate">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EdtProfileUploadName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:textColor="@color/colorFirst"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/EdtProfileUploadJoinAt"
+            app:layout_constraintEnd_toStartOf="@+id/guideline21"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline22" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/EdtProfileUploadJoinAt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:elevation="2dp"
+            android:text="sdfdsfsdf"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorFirst"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/CardCreateClass"
+            app:layout_constraintEnd_toStartOf="@+id/guideline21"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline22"
+            app:layout_constraintTop_toBottomOf="@id/EdtProfileUploadName" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardCreateClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/guideline19"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/ImgProfileUploadGuru"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ImgProfileUploadGuruBg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="#923C3F41"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EdtProfileUploadEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/Vv1ProfileUpload"
+            app:layout_constraintEnd_toStartOf="@+id/guideline21"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline22"
+            app:layout_constraintTop_toBottomOf="@id/CardCreateClass" />
+
+        <View
+            android:id="@+id/Vv1ProfileUpload"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toTopOf="@+id/ClProfileUpload"
+            app:layout_constraintEnd_toStartOf="@+id/guideline21"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline22"
+            app:layout_constraintTop_toBottomOf="@id/EdtProfileUploadEmail" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ClProfileUpload"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/guideline20"
+            app:layout_constraintEnd_toStartOf="@+id/guideline21"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline22"
+            app:layout_constraintTop_toBottomOf="@id/Vv1ProfileUpload">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TvKetProfileUploadNIP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="NIP"
+                android:textAlignment="textStart"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/EdtProfileUploadNIP"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/EdtProfileUploadNIP"
+                app:layout_constraintTop_toTopOf="@id/EdtProfileUploadNIP" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TvKetProfileUploadGender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="Jenis Kelamin"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/RgProfileUploadGender"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/RgProfileUploadGender"
+                app:layout_constraintTop_toTopOf="@+id/RgProfileUploadGender" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TvKetProfileUploadReligion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="Agama"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/SpProfileUploadReligion"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/SpProfileUploadReligion"
+                app:layout_constraintTop_toTopOf="@+id/SpProfileUploadReligion" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/TvKetProfileUploadInstitution"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="Institusi"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/EdtProfileUploadInstitution"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/EdtProfileUploadInstitution"
+                app:layout_constraintTop_toTopOf="@+id/EdtProfileUploadInstitution" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EdtProfileUploadNIP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:inputType="number"
+                android:maxLength="16"
+                android:textAlignment="textStart"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/RgProfileUploadGender"
+                app:layout_constraintLeft_toRightOf="@+id/TvKetProfileUploadNIP"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/RgProfileUploadGender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical"
+                android:textAlignment="textEnd"
+                android:textSize="16dp"
+                android:weightSum="2"
+                app:layout_constraintBottom_toTopOf="@+id/SpProfileUploadReligion"
+                app:layout_constraintLeft_toRightOf="@id/TvKetProfileUploadGender"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EdtProfileUploadNIP">
+
+                <RadioButton
+                    android:id="@+id/RbUpdateProfilLaki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Laki-laki"
+                    android:textColor="@color/colorFirstDark" />
+
+                <RadioButton
+                    android:id="@+id/RbUpdateProfilPerempuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Perempuan"
+                    android:textColor="@color/colorFirstDark" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/SpProfileUploadReligion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:entries="@array/agama"
+                android:textAlignment="textStart"
+                android:textColorHint="@color/colorFirstDark"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:tooltipText="Agama"
+                app:layout_constraintBottom_toTopOf="@+id/EdtProfileUploadInstitution"
+                app:layout_constraintLeft_toRightOf="@id/TvKetProfileUploadReligion"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/RgProfileUploadGender" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EdtProfileUploadInstitution"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:textAlignment="textStart"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/BtnUpdateProfil"
+                app:layout_constraintLeft_toRightOf="@id/TvKetProfileUploadInstitution"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SpProfileUploadReligion" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/BtnUpdateProfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/colorFirstDark"
+                android:padding="16dp"
+                android:text="Simpan Perubahan"
+                android:textColor="@color/colorThird"
+                android:textColorHint="@color/colorFirst"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/EdtProfileUploadInstitution">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="24dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="24dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

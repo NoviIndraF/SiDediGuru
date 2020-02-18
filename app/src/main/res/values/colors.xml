@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F79A33</color>
+    <color name="colorPrimaryDark">#bf6b00</color>
+    <color name="colorAccent">#ffcb64</color>
+
+    <color name="colorFirst">#ece8d9</color>
+    <color name="colorFirstDark">#F79A33</color>
+    <color name="colorThird">#ffffff</color>
+
+    <color name="colorTinggi">#C62828</color>
+    <color name="colorSedang">#F9A825</color>
+    <color name="colorRendah">#2E7D32</color>
+
+    <color name="colorTransparan">#00000000</color>
+</resources>

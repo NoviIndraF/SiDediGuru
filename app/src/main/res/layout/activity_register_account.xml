@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="24dp"
+    tools:context=".RegisterAccount">
+
+    <TextView
+        android:id="@+id/TvBuatAkunAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"
+        android:text="Buat Akun"
+        android:textAlignment="center"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/TilBuatAkunEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TilBuatAkunEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Email"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorFirstDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/TilBuatAkunPassword1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TvBuatAkunAccount">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/EdtBuatAkunEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@android:color/white"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TilBuatAkunPassword1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Password"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorFirstDark"
+        android:textStyle="bold"
+        app:endIconMode="password_toggle"
+        app:layout_constraintBottom_toTopOf="@id/TilBuatAkunPassword2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TilBuatAkunEmail">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/EdtBuatAkunPassword1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@android:color/white"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TilBuatAkunPassword2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:hint="Re-Password"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorFirstDark"
+        android:textStyle="bold"
+        app:endIconMode="password_toggle"
+        app:layout_constraintBottom_toTopOf="@id/BtnBuatAkunSelanjutnya"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TilBuatAkunPassword1">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/EdtBuatAkunPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@android:color/white"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BtnBuatAkunSelanjutnya"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorFirstDark"
+        android:padding="16dp"
+        android:text="Selanjutnya"
+        android:textColor="@color/colorFirst"
+        app:layout_constraintBottom_toTopOf="@+id/TilBuatAkunPassword2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TilBuatAkunPassword2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

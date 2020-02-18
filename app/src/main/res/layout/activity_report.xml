@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Report">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/SwRefreshReport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/LyHeaderReport"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toTopOf="@+id/guideline24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ImgClassReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ImgTransparantClassReport"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:src="#AD494949"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <TextView
+                            android:id="@+id/TvReportDetailNamaKelas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:fontFamily="sans-serif"
+                            android:text="..."
+                            android:textColor="@color/colorThird"
+                            android:textSize="36sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toTopOf="@+id/ClTotal"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/guideline27" />
+
+                        <TextView
+                            android:id="@+id/TvReportDetailTanggal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="sans-serif-light"
+                            android:text="-"
+                            android:textColor="@color/colorThird"
+                            android:textSize="12sp"
+                            android:textStyle="italic"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                            app:layout_constraintTop_toTopOf="@+id/guideline27" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/ClTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintLeft_toLeftOf="@id/TvReportDetailNamaKelas"
+
+                            app:layout_constraintRight_toRightOf="@id/TvReportDetailNamaKelas"
+                            app:layout_constraintTop_toBottomOf="@id/TvReportDetailNamaKelas">
+
+                            <TextView
+                                android:id="@+id/TvReportDetailJumlahTotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="100"
+                                android:textColor="#ffffff"
+                                android:textSize="28sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/TvReportDetailToleranTotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="Siswa"
+                                android:textColor="#ffffff"
+                                android:textSize="24sp"
+                                android:textStyle="normal"
+                                app:layout_constraintLeft_toRightOf="@id/TvReportDetailJumlahTotal"
+                                app:layout_constraintTop_toTopOf="@id/TvReportDetailJumlahTotal" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/ClToleran"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="@+id/ClInToleran"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline30"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="@+id/guideline25"
+                            app:layout_constraintTop_toTopOf="@+id/ClInToleran">
+
+                            <TextView
+                                android:id="@+id/TvReportDetailToleran"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:text="0"
+                                android:textColor="#ffffff"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/TvReportDetailToleranKet"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/TvReportDetailToleranKet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="Siswa"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                app:layout_constraintLeft_toRightOf="@id/TvReportDetailToleran"
+                                app:layout_constraintTop_toTopOf="@id/TvReportDetailToleran" />
+
+                            <TextView
+                                android:id="@+id/TvReportDetailToleranToleran"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Kecenderunagn Positif"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp"
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/TvReportDetailToleran"
+                                app:layout_constraintStart_toStartOf="@+id/TvReportDetailToleranKet"
+                                app:layout_constraintTop_toBottomOf="@+id/TvReportDetailToleranKet" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/ClInToleran"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline26"
+                            app:layout_constraintStart_toStartOf="@+id/guideline32"
+                            app:layout_constraintTop_toBottomOf="@+id/ClTotal">
+
+                            <TextView
+                                android:id="@+id/TvReportDetailInToleran"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:text="100"
+                                android:textColor="#ffffff"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/TvReportDetailInToleranKet"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/TvReportDetailInToleranKet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:text="Siswa"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp"
+                                android:textStyle="normal"
+                                app:layout_constraintLeft_toRightOf="@id/TvReportDetailInToleran"
+                                app:layout_constraintTop_toTopOf="@id/TvReportDetailInToleran" />
+
+                            <TextView
+                                android:id="@+id/TvReportDetailInToleranToleran"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Kecenderungan Negatif"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp"
+                                android:textStyle="italic"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="@+id/TvReportDetailInToleranKet"
+                                app:layout_constraintTop_toBottomOf="@+id/TvReportDetailInToleranKet" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_begin="24dp" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_end="24dp" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline27"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintGuide_begin="48dp" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline30"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.49" />
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline32"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.51" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <com.robertlevonyan.views.expandable.Expandable
+                        android:id="@+id/ExlReportClassDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toTopOf="@id/Vv1ReportClassDetail"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/LyHeaderReport">
+
+                        <include
+                            android:id="@+id/header_report"
+                            layout="@layout/expandable_header_report_class_detail" />
+
+                        <include
+                            android:id="@+id/content_report"
+                            layout="@layout/expandable_content_report_class_detail" />
+                    </com.robertlevonyan.views.expandable.Expandable>
+
+                    <View
+                        android:id="@+id/Vv1ReportClassDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorPrimaryDark"
+                        app:layout_constraintBottom_toTopOf="@id/TbReportDetail"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ExlReportClassDetail" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/TbReportDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toTopOf="@id/view_pager"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/Vv1ReportClassDetail" />
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/TbReportDetail" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

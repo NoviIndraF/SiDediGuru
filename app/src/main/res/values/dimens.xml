@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="banner">100dp</dimen>
+    <dimen name="content_text_size_big">36sp</dimen>
+    <dimen name="content_text_size_small">12sp</dimen>
+    <dimen name="content_text_size_medium">20sp</dimen>
+
+    <dimen name="card_tinggi_pertanyaan">240dp</dimen>
+    <dimen name="card_lebar_pertanyaan">300dp</dimen>
+
+    <dimen name="card_tinggi_jawaban">150dp</dimen>
+    <dimen name="card_lebar_jawaban">300dp</dimen>
+    <dimen name="card_margin">20dp</dimen>
+    <dimen name="card_tinggi_margin">12dp</dimen>
+
+    <dimen name="button_panjang">100dp</dimen>
+    <dimen name="button_tinggi">80dp</dimen>
+
+    <dimen name="contrain_jawaban_margin_top">32dp</dimen>
+
+    <dimen name="btn_padding_long">36dp</dimen>
+    <dimen name="btn_padding_medium">24dp</dimen>
+    <dimen name="btn_padding_small">16dp</dimen>
+
+
+    <dimen name="btn_margin_long">36dp</dimen>
+    <dimen name="btn_margin_medium">24dp</dimen>
+    <dimen name="btn_margin_small">16dp</dimen>
+    <dimen name="btn_margin_very_small">8dp</dimen>
+
+    <dimen name="radius_card_page">8dp</dimen>
+    <dimen name="elevation_card">8dp</dimen>
+</resources>

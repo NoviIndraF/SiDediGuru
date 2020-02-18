@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Sidedi Guru</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tab_text_1">Kecenderungan Positif</string>
+    <string name="tab_text_2">Kecenderungan Negatif</string>
+
+
+    <string name="tab_text_class_datail_1">Students</string>
+    <string name="tab_text_class_datail_2">Questions</string>
+
+    <string-array name="agama">
+        <item>islam</item>
+        <item>kristen</item>
+        <item>katolik</item>
+        <item>hindu</item>
+        <item>buddha</item>
+        <item>konghucu</item>
+    </string-array>
+
+
+    <string name="notification">Notification</string>
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/ImgStudentDetailProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_student"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/TvStudentDetailName"
+        />
+        <TextView
+            android:id="@+id/TvStudentDetailJoinAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="20 September 2020"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            app:layout_constraintTop_toTopOf="@+id/ImgStudentDetailProfile"
+            app:layout_constraintRight_toRightOf="@id/VvStudentDetail"
+            />
+        <TextView
+            android:id="@+id/TvStudentDetailName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Pulu pulupulu pulupulupul"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/ImgStudentDetailProfile"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/TvStudentDetailNIS"
+            />
+        <TextView
+            android:id="@+id/TvStudentDetailNIS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Pulu pulupulu pulupulupul"
+            android:textAlignment="center"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/TvStudentDetailName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/VvStudentDetail"
+            />
+
+        <View
+            android:id="@+id/VvStudentDetail"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintTop_toBottomOf="@id/TvStudentDetailNIS"
+            app:layout_constraintBottom_toTopOf="@id/TvStudentDetailJenisKelamin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/TvStudentDetailJenisKelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Laki-laki"
+            android:textAlignment="center"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/VvStudentDetail"
+            app:layout_constraintRight_toRightOf="@id/VvStudentDetail"
+            app:layout_constraintBottom_toTopOf="@id/TvStudentDetailUmur"
+            />
+
+        <TextView
+            android:id="@+id/TvStudentDetailUmur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="29 Tahun"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/TvStudentDetailJenisKelamin"
+            app:layout_constraintRight_toRightOf="@id/VvStudentDetail"
+            app:layout_constraintBottom_toTopOf="@id/TvStudentDetailAgama"
+            />
+
+        <TextView
+            android:id="@+id/TvStudentDetailAgama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Islam"
+            android:textAlignment="center"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/TvStudentDetailUmur"
+            app:layout_constraintRight_toRightOf="@id/VvStudentDetail"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/TvKetStudentDetailJenisKelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Jenis Kelamin"
+            android:textAlignment="center"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/VvStudentDetail"
+            app:layout_constraintLeft_toLeftOf="@id/VvStudentDetail"
+            app:layout_constraintBottom_toTopOf="@id/TvStudentDetailUmur"
+            />
+
+        <TextView
+            android:id="@+id/TvKetStudentDetailUmur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Umur"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/TvStudentDetailJenisKelamin"
+            app:layout_constraintLeft_toLeftOf="@id/VvStudentDetail"
+            app:layout_constraintBottom_toTopOf="@id/TvStudentDetailAgama"
+            />
+
+        <TextView
+            android:id="@+id/TvKetStudentDetailAgama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Agama"
+            android:textAlignment="center"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/TvStudentDetailUmur"
+            app:layout_constraintLeft_toLeftOf="@id/VvStudentDetail"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
